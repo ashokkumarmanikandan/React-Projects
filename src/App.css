@@ -1,0 +1,228 @@
+th, td {
+    padding-right: 80px;
+}
+
+th {
+    font-size: 20px;
+}
+
+tr{
+    border-spacing: 10px;
+}
+
+button {
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+}
+
+button:hover {
+    color: #007bff;
+    background-color: white;
+}
+
+input {
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 200px;
+    height: 20px;
+}
+
+.modal input {
+    display: flex;
+}
+
+input:focus {
+    color: red;
+}
+
+table {
+    padding: 10px 20px;
+}
+
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Ensures the modal is on top */
+}
+
+.modal-content {
+    padding: 20px 120px 100px 60px;
+    background-color: whitesmoke;
+}
+
+.action-btn {
+    margin-top: 20px;
+}
+
+input[type=radio] {
+    display: inline;
+    width: 30px;
+    height: 15px;
+}
+
+.Native-options {
+    margin-top: 10px;
+}
+
+.Empty-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.select-all-input {
+    position: absolute;
+    padding: 10px;
+}
+
+.delete-modal {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: darkgray;
+}
+
+.delete-modal-content {
+    padding: 300px 600px;
+    background-color: darkgray;
+}
+
+.validation-error {
+    color: red;
+    font-size: 20px;
+    text-align: center;
+    padding: 20rem 1rem 1rem;
+}
+
+button:disabled {
+    background-color: darkgray;
+}
+
+.admin button{
+
+}
+
+.User-Nav a, .admin-nav a{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 24px;
+    color: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.User-Nav, .admin-nav{
+    background-color: #222;
+}
+
+.Login,.Signup{
+    padding: 250px 600px;
+}
+
+.Login input, .Signup input {
+    display: flex;
+}
+
+.Signup a{
+    margin-left: 100px;
+}
+
+.error{
+    color: red;
+    font-size: 12px;
+}
+
+.logout-button{
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.desc{
+    text-decoration: underline;
+    cursor: pointer;
+    color: blue;
+}
+
+.description {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    max-width: 400px;
+    width: 90%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+}
+
+.description img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.description label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.description span {
+    font-weight: normal;
+    color: #555;
+    margin-left: 8px;
+}
+
+.description button {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 16px;
+    background-color: #3f51b5;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.description button:hover {
+    background-color: #303f9f;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 999;
+    user-select: none;
+    pointer-events: auto;
+}
